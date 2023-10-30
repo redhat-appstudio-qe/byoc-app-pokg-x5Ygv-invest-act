@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: toql
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-unei-tenant/byoc-app-pokg/toql@sha256:47e19631fba74b7fffb1eac64398eee6dfc8e35ec1c52a04878ee1c8daac629d
+        name: my-java-quarkus
+        resources: {}
+status: {}
