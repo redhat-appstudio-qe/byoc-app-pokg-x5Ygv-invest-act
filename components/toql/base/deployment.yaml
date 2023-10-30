@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: toql
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-unei-tenant/byoc-app-pokg/toql@sha256:47e19631fba74b7fffb1eac64398eee6dfc8e35ec1c52a04878ee1c8daac629d
         name: my-java-quarkus
         ports:
         - containerPort: 8081
